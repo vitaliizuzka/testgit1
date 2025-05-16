@@ -1,4 +1,3 @@
-import model.Cat;
 import model.Person;
 
 public class Main {
