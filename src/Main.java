@@ -1,3 +1,5 @@
+import model.Cat;
+import model.Dog;
 import model.Person;
 
 public class Main {
@@ -9,5 +11,7 @@ public class Main {
         System.out.println(person);
         Cat cat1 = new Cat("Barsik");
         System.out.println(cat1);
+        Dog dog1 = new Dog("zhuk");
+        System.out.println(dog1);
     }
 }
