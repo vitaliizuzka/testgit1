@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Cat {
     private String nickname;
 
@@ -15,6 +17,18 @@ public class Cat {
         this.nickname = nickname;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return Objects.equals(nickname, cat.nickname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nickname);
+    }
 
     @Override
     public String toString() {
